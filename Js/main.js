@@ -43,6 +43,33 @@
 
 // document.write("El menor es " + menor);
 
+// 3.
+function Adivinar() {
+      let superior = 100;
+      let inferior = 1;
+      let noEncontrado = true;
+      while(noEncontrado) {
+          let mid = parseInt(inferior + ((superior-infreior) /2)<1);
+          console.log(mid);
+          console.log(((superior-inferior)/ 2));
+          if (((superior-inferior)/2)<1) {
+              noEncontrado= false;
+              alert("Tú número es el " + (parseInt(mid)+1));
+              break;
+          }//if
+          let res = confirm("Tu número es menor o igual a " + mid);
+          if (res){
+              superior=mid;
+          } else {
+              inferior=mid;
+          }//if
+          console.log(inferior, superior);
+      }//while
+  } //Adivinar
+  
+  Adivinar();
+  
+
 // 4. Solicitar un entero (entre el 100 y el 200) y determinar si es multiplo de 3.
 // 5.Elaborar un algoritmo para leer 3 números y determinar si uno es la suma de los otros 2.
 // 6. Elabora un algoritmo para leer un número y determinar si es par o impar.
